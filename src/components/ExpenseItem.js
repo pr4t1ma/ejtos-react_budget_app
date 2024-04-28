@@ -19,7 +19,7 @@ const ExpensesItem = (props) => {
   return (
     <tr>
       <td>{props.name}</td>
-      <td>{props.cost}</td>
+      <td>$ {props.cost}</td>
       <td>
         <button
           className="btn btn-primary"

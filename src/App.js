@@ -39,10 +39,6 @@ const App = () => {
             <ExpenseList /> 
           </div>
           {/* Add ExpenseItem component here */} 
-          <div className="col-sm">
-            <ExpensesItem />
-          </div>{" "}
-           
           <div className="">
             <AllocationForm />
           </div>
