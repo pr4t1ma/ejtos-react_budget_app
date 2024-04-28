@@ -1,13 +1,12 @@
 import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 import ExpensesItem from "./ExpenseItem";
-import ExpenseTotal from "./ExpenseTotal";
 
 const ExpenseList = () => {
   const { expenses } = useContext(AppContext);
   return (
-    <table>
-      <thead>
+    <table className="table">
+      <thead className="thead-light">
         <tr>
           <th scope="col">Department</th>
           <th scope="col">Allocated Budget</th>
@@ -16,16 +15,15 @@ const ExpenseList = () => {
         </tr>
       </thead>
       <tbody>
-        <h1>Expense</h1>
+        {expenses.map((expense) => (
+          <ExpensesItem
+            id={expense.id}
+            key={expense.id}
+            name={expense.name}
+            cost={expense.cost}
+          />
+        ))}
       </tbody>
-      {expenses.map((expense) => (
-        <ExpensesItem
-          id={expense.id}
-          key={expense.id}
-          name={expense.name}
-          cost={expense.cost}
-        />
-      ))}
     </table>
   );
 };

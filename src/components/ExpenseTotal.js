@@ -8,8 +8,8 @@ const ExpenseTotal = () => {
     return (total += item.cost);
   }, 0);
   return (
-    <div>
-      <span>Total expenses so far :${totalExpenses}</span>
+    <div className="alert alert-primary">
+      <span>Spent so far :${totalExpenses}</span>
     </div>
   );
 };

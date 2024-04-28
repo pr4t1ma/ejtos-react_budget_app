@@ -21,10 +21,15 @@ const ExpensesItem = (props) => {
       <td>{props.name}</td>
       <td>{props.cost}</td>
       <td>
-        <butto onclick={() => increaseAllocation(props.name)}>+</butto>
+        <button
+          className="btn btn-primary"
+          onClick={() => increaseAllocation(props.name)}
+        >
+          +
+        </button>
       </td>
       <td>
-        <TiDelete size="1.5em" onClick={handleDeleteExpense}></TiDelete>
+        <TiDelete size="2.5em" onClick={handleDeleteExpense}></TiDelete>
       </td>
     </tr>
   );

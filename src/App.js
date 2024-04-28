@@ -22,14 +22,30 @@ const App = () => {
              {" "}
           {
             /* Add Budget component here */
-            <Budget />
+            <div className="col-sm">
+              <Budget />
+            </div>
           }
              {/* Add Remaining component here*/} 
-          <Remaining />   Add ExpenseTotal component here 
-          <ExpenseTotal /> {/* Add ExpenseList component here */} {" "}
-          <ExpenseList />  {/* Add ExpenseItem component here */} 
-          <ExpensesItem />  
-          <AllocationForm />
+          <div className="col-sm">
+            <Remaining />
+          </div>
+          {/*   Add ExpenseTotal component here  */}
+          <div className="col-sm">
+            <ExpenseTotal />
+          </div>
+           {/* Add ExpenseList component here */} 
+          <div className="">
+            <ExpenseList /> 
+          </div>
+          {/* Add ExpenseItem component here */} 
+          <div className="col-sm">
+            <ExpensesItem />
+          </div>{" "}
+           
+          <div className="">
+            <AllocationForm />
+          </div>
           {/* Add AllocationForm component here under */}
         </div>
       </div>
